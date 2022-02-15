@@ -1,8 +1,14 @@
 {
   "notes": [
     {
-      "title": "Test Title",
-      "text": "Test text"
+      "title": "Note 3",
+      "text": "Note 3",
+      "id": "64982df3-c577-4328-bea9-ee4f28092509"
+    },
+    {
+      "title": "Note Title",
+      "text": "Test Text",
+      "id": "46072162-fdad-4bcc-842b-8f3211a7faff"
     }
   ]
 }
