@@ -98,7 +98,6 @@ const handleNoteDelete = (e) => {
 // Sets the activeNote and displays it
 const handleNoteView = (e) => {
   e.preventDefault();
-
   // prevents an error when there are no notes and
   // you click on the No saved Notes placeholder note
   if (e.target.textContent === "No saved Notes") {
