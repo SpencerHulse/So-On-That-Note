@@ -178,6 +178,12 @@ const renderNoteList = async (notes) => {
 
 // Gets notes from the db and renders them to the sidebar
 const getAndRenderNotes = () => getNotes().then(renderNoteList);
+/* const getAndRenderNotes = async () => {
+  const notes = await getNotes();
+  const jsonNotes = await notes.json();
+  console.log(jsonNotes);
+  renderNoteList(jsonNotes);
+}; */
 
 if (window.location.pathname === "/notes") {
   saveNoteBtn.addEventListener("click", handleNoteSave);
