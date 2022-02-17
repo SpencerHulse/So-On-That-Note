@@ -15,7 +15,7 @@ app.use(express.static("./public"));
 app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
 
-// Port
+// Port - ENV URL
 const PORT = process.env.PORT || 3001;
 const start = async () => {
   try {
