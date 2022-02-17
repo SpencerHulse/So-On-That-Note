@@ -9,6 +9,16 @@
       "title": "Note #2",
       "text": "The second note for testing.",
       "id": "4abcea9d-8059-4e1f-99e9-0c414826987e"
+    },
+    {
+      "title": "Test Note",
+      "text": "Used for testing purposes.",
+      "id": "cf99b5d9-d646-429e-9d05-436c26a066cb"
+    },
+    {
+      "title": "Test Note",
+      "text": "Used for testing purposes.",
+      "id": "21bcb811-3d8f-41d0-ac05-f2de8c8e44b5"
     }
   ]
 }
