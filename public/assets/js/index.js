@@ -53,7 +53,7 @@ const deleteNote = (id) =>
 const renderActiveNote = () => {
   hide(saveNoteBtn);
 
-  if (activeNote.id) {
+  if (activeNote._id) {
     noteTitle.setAttribute("readonly", true);
     noteText.setAttribute("readonly", true);
     noteTitle.value = activeNote.title;
@@ -81,9 +81,9 @@ const handleNoteSave = () => {
 const handleNoteDelete = (e) => {
   // Prevents the click listener for the list from being called when the button inside of it is clicked
   e.stopPropagation();
-
   const note = e.target;
-  const noteId = JSON.parse(note.parentElement.getAttribute("data-note")).id;
+
+  const noteId = JSON.parse(note.parentElement.getAttribute("data-note"))._id;
 
   if (activeNote.id === noteId) {
     activeNote = {};
@@ -105,6 +105,7 @@ const handleNoteView = (e) => {
   }
 
   activeNote = JSON.parse(e.target.parentElement.getAttribute("data-note"));
+
   renderActiveNote();
 };
 
